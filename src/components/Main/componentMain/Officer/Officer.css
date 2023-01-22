@@ -1,0 +1,10 @@
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.officerText {
+  padding: 30px;
+  font: bold 20px/20px "Montserrat";
+  margin-top: 40px;
+}

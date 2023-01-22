@@ -1,0 +1,154 @@
+.wrap {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  text-align: center;
+  color: brown;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.form {
+  padding-top: 20px;
+  margin: 0 10px;
+}
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 30px;
+}
+
+.form label {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 15px;
+  margin-bottom: 5px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #666565;
+}
+
+.input {
+  box-sizing: border-box;
+  font: 20px/16px "Arial";
+  width: 408px;
+  height: 50px;
+  padding-left: 10px;
+
+  border: 1px solid #868484;
+  border-radius: 10px;
+}
+.input::placeholder {
+  opacity: 0.4;
+}
+.textarea {
+  box-sizing: border-box;
+  font: 20px/16px "Arial";
+  width: 408px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #868484;
+  border-radius: 10px;
+  max-width: 408px;
+  min-height: 100px;
+}
+.textarea::placeholder {
+  opacity: 0.4;
+  position: absolute;
+  top: 40%;
+}
+.error {
+  color: red;
+  font-family: "Montserrat";
+}
+
+.btn {
+  background: brown;
+  border-radius: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 39px;
+  border: none;
+  text-transform: capitalize;
+  color: #faf5e4;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  padding: 15px 45px;
+}
+
+.btn:hover {
+  background-color: rgb(126, 19, 19);
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 1px brown;
+  transform: translateY(-1px);
+}
+
+.btn[disabled="disabled"],
+.btn:disabled {
+  opacity: 0.7;
+  color: linen;
+  background-color: aqua;
+}
+
+@media (max-width: 925px) {
+  .title {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 620px) {
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .wrap {
+    max-width: 408px;
+  }
+}
+
+@media (max-width: 440px) {
+  .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input {
+    max-width: 330px;
+  }
+
+  .textarea {
+    max-width: 330px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .wrap {
+    max-width: 330px;
+  }
+}

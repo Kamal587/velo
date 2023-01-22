@@ -1,0 +1,48 @@
+.root {
+  background-color: rgba(221, 220, 218, 0.76);
+  border-top: 5px solid teal;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.blogs {
+  display: flex;
+  padding: 10px 10px;
+
+  justify-content: space-around;
+}
+
+.item1,
+.item2,
+.item3 {
+  max-width: 250px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: large;
+  font-weight: bold;
+  display: inline;
+  border-bottom: 3px solid teal;
+}
+
+.blog,
+.textSale {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+@media (max-width: 720px) {
+  .item1 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .item2 {
+    display: none;
+  }
+}

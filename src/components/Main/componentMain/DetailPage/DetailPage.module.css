@@ -1,0 +1,137 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 550px;
+  margin: 0px auto;
+}
+
+.regist {
+  margin: 0px 10px;
+}
+
+.title {
+  text-align: center;
+  margin: 10px;
+  color: #2b6d63;
+  font: bold 26px/25px "Motserrat";
+}
+
+@media (max-width: 925px) {
+  .title {
+    margin-top: 80px;
+  }
+}
+
+.dataInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form label {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #a57b7b;
+  max-width: 250px;
+}
+
+.input {
+  box-sizing: border-box;
+  font: 15px/15px "Arial";
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  background-color: white;
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+}
+
+.inputRead {
+  box-sizing: border-box;
+  font: 15px/12px "Arial";
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.input:hover {
+  border: 3px solid #919090;
+}
+
+.error {
+  color: red;
+  font-family: "Montserrat";
+  text-align: right;
+}
+
+.btn {
+  background: #125b50;
+  border-radius: 60px;
+  padding: 10px 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 39px;
+  border: none;
+  text-transform: capitalize;
+  color: #faf5e4;
+  cursor: pointer;
+  appearance: "primary";
+  display: inline;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.btn:hover {
+  background-color: #155249;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 1px #0c4139;
+  transform: translateY(-1px);
+}
+
+.btn[disabled="disabled"],
+.btn:disabled {
+  opacity: 0.7;
+  color: linen;
+  background-color: gray;
+  box-shadow: none;
+  transform: none;
+  cursor: text;
+}
+
+.textarea {
+  box-sizing: border-box;
+  font: 14px/12px "Roboto";
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #868484;
+  border-radius: 10px;
+  max-width: 408px;
+  min-height: 50px;
+}
+
+@media (max-width: 580px) {
+  .dataInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    max-width: 300px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
